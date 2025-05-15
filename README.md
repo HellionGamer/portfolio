@@ -1,5 +1,9 @@
 # MAONGEZI Portfolio Website
 
+## 🔗 Live Demo
+
+[Click here to view the live portfolio](https://hellionGamer.github.io/maongezi-portfolio/)
+
 ## 🛠️ Tools Used
 - **HTML5** — Semantic structure for all pages
 - **CSS3** — External, internal, and inline styles applied
