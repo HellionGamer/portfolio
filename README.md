@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 
-[Click here to view the live portfolio]https://helliongamer.github.io/portfolio/
+[Click here to view the live portfolio](https://helliongamer.github.io/portfolio/)
 
 ## 🛠️ Tools Used
 - **HTML5** — Semantic structure for all pages
