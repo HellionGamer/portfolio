@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="keywords" content="Portfolio, Web Developer, Projects, HTML, CSS, JavaScript">
+  <meta name="author" content="ERICK MAONGEZI">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | My Portfolio</title>
+  <link rel="stylesheet" href="css/MAONGEZI.css" />
+</head>
+<body onload="applySavedTheme();">
+
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="MAONGEZI.html">Home</a></li>
+        <li><a href="MAONGEZI.html#about">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <form id="contactForm" onsubmit="return validateContactForm()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="^\+?\d{10,15}$" placeholder="+255712345678" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p>You can also reach me at: 
+        <a href="mailto:itismao0@gmail.com">erickmaongezi1@gmail.com</a>
+      </p>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> <I>MAONGEZI. All rights reserved.</I></p>
+    <a href="mailto:itismao0@gmail.com">Email Me</a>
+
+  </footer>
+
+  <script src="js/MAONGEZI.js"></script>
+</body>
+</html>

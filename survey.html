@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="keywords" content="Portfolio, Web Developer, Projects, HTML, CSS, JavaScript">
+  <meta name="author" content="ERICK MAONGEZI">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey | My Portfolio</title>
+  <link rel="stylesheet" href="css/MAONGEZI.css">
+  <style>
+    .survey-section h2 {
+      font-style: italic;
+      text-decoration: underline;
+    }
+  </style>
+  
+</head>
+<body onload="applySavedTheme();">
+
+  <header>
+    <h1>Feedback Survey</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="MAONGEZI.html">Home</a></li>
+        <li><a href="MAONGEZI.html#about">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <section class="survey-section">
+      <h2>Let Us Know What You Think</h2>
+      <form id="surveyForm" onsubmit="return validateSurveyForm()">
+        
+        <label style="color: #800020;">How would you rate your experience?</label><br />
+        <input type="radio" name="experience" value="excellent" required> Excellent<br />
+        <input type="radio" name="experience" value="good"> Good<br />
+        <input type="radio" name="experience" value="average"> Average<br />
+        <input type="radio" name="experience" value="poor"> Poor<br /><br />
+
+        <label style="color: #800020;">What features did you find useful?</label><br />
+        <input type="checkbox" name="features" value="Design"> Design<br />
+        <input type="checkbox" name="features" value="Dark Mode"> Dark Mode<br />
+        <input type="checkbox" name="features" value="Project Popups"> Project Popups<br />
+        <input type="checkbox" name="features" value="Contact Form"> Contact Form<br /><br />
+
+        <label for="suggestions">Any suggestions?</label><br />
+        <textarea id="suggestions" name="suggestions" rows="5" placeholder="Write here..." required></textarea><br />
+
+        <button type="submit">Submit Survey</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> <I>MAONGEZI. All rights reserved.</I></p>
+  </footer>
+
+  <script src="js/MAONGEZI.js"></script>
+</body>
+</html>

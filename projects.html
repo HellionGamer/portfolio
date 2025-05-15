@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="keywords" content="Portfolio, Web Developer, Projects, HTML, CSS, JavaScript">
+  <meta name="author" content="ERICK MAONGEZI">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | My Portfolio</title>
+  <link rel="stylesheet" href="css/MAONGEZI.css">
+</head>
+<body onload="applySavedTheme();">
+
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="MAONGEZI.html">Home</a></li>
+        <li><a href="MAONGEZI.html#about">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <section class="projects-section">
+      <h2>Projects Showcase</h2>
+      <div class="projects-grid">
+
+        <div class="project-card" onclick="openModal('modal1')">
+          <h3>Portfolio Website</h3>
+          <p>Click for more info</p>
+        </div>
+      
+        <div class="project-card" onclick="openModal('modal2')">
+          <h3>Weather App</h3>
+          <p>Click for more info</p>
+        </div>
+      
+        <div class="project-card" onclick="openModal('modal3')">
+          <h3>To-Do List</h3>
+          <p>Click for more info</p>
+        </div>
+      
+      </div>
+      
+      <!-- Modal Windows -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h3>Portfolio Website</h3>
+          <p>This website showcases my skills with a responsive layout, navigation bar, and custom theme toggle.</p>
+        </div>
+      </div>
+      
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h3>Weather App</h3>
+          <p>Built using HTML, CSS, and JavaScript with OpenWeatherMap API integration and real-time data.</p>
+        </div>
+      </div>
+      
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <h3>To-Do List</h3>
+          <p>Allows you to add, mark complete, and delete tasks. Data is saved using localStorage.</p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> <I>MAONGEZI. All rights reserved.</I></p>
+  </footer>
+
+  <script src="js/MAONGEZI.js"></script>
+</body>
+</html>
